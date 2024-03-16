@@ -35,9 +35,9 @@ function GenerarPasswordHash(){
 						let div = '<div class="input-group col-12 mb-2"><span class="btn-primary badge">';
 						
 						$('.card-data').html("");
-						$('.card-data').append(div +'COST 10 </span><span class="form-control" id="cost10">'+ data.cost10 +'</span></div>');
-						$('.card-data').append(div +'COST 12 </span><span class="form-control" id="cost12">'+ data.cost12 +'</span></div>');
-						$('.card-data').append(div +'COST 15 </span><span class="form-control" id="cost15">'+ data.cost15 +'</span></div>');
+						$('.card-data').append(div +'COST 10 ['+ data.time10 +'s]</span><span class="form-control" id="cost10">'+ data.cost10 +'</span></div>');
+						$('.card-data').append(div +'COST 12 ['+ data.time12 +'s]</span><span class="form-control" id="cost12">'+ data.cost12 +'</span></div>');
+						$('.card-data').append(div +'COST 15 ['+ data.time15 +'s]</span><span class="form-control" id="cost15">'+ data.cost15 +'</span></div>');
 
 					}, 100);
 					//SwalMensaje('Password Hash Generados', 'Se han generado los Password Hash.', 'success');
