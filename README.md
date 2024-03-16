@@ -10,9 +10,7 @@ El valor por defecto de cost en password_hash() es 10.
 Aumentar el cost mejora el hash resultante, pero requiere más procesamiento.
 En el archivo `password_hash.php` se pueden configurar el cost en la siguiente opción:
 ```
-
 ['cost' => 12,]
-
 ```
 OBS: Se puede modificar el formulario para agregar un select de Algoritmo o un input para ingresar el Cost.
 
@@ -35,7 +33,7 @@ Una vez clonado el repositorio en su carpeta de Apache [www - htdocs - html - u 
 
 
 ## Comparar Hashed
-Para comparar si 2 Hash son iguales, se debe utilizar la función `password_verify` [https://www.php.net/manual/es/function.password-verify.php]
+Para comparar si el texto ingresado es igual al Password Hash almacenado, se debe utilizar la función `password_verify` [https://www.php.net/manual/es/function.password-verify.php]
 ```
 $passUsuario = '1';
 if (password_verify($passUsuario, '$2y$10$9ouuxu2Pd8aU6GTEKZ8lCu2BUcORTjgMJ.0lJ45LZpsXozFvlDA7G')) {
