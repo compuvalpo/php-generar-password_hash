@@ -27,7 +27,6 @@ function GenerarPasswordHash(){
             dataType: 'json',
             data: {"data": inputData},
             success: function(data) {
-					console.log('data' +data );
 
 				if(data){
 					setTimeout(function () {
