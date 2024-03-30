@@ -41,11 +41,11 @@ function GenerarPasswordHash(){
 					}, 100);
 					//SwalMensaje('Password Hash Generados', 'Se han generado los Password Hash.', 'success');
 				}else{
-					SwalMensaje('Error', 'Error al intentar de generar los Password Hash.', 'error');
+					SwalMensaje('Password Hash no Generados', 'No se han generado los Password Hash.', 'error');
 				}
             },
             error: function(jqXHR, status, error) {
-				SwalMensaje('Password Hash no Generados', 'No se han generado los Password Hash.', 'error');
+				SwalMensaje('Error', 'Error al intentar de generar los Password Hash.', 'error');
             }
         });
 	
